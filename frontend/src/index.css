@@ -1,0 +1,170 @@
+
+:root {
+  --primary : #1aac83,
+  --error: #e7193e
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  min-height: 100vh;
+  margin: 0 auto;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.container {
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 4rem;
+}
+
+.container a {
+  text-decoration: none;
+  color: black;
+}
+.container a:active {
+  color: black;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  margin-right: 5rem;
+}
+
+.nav-links a {
+  margin: 0 1.8rem;
+}
+
+.logout-div {
+  display: flex;
+  align-items: center;
+  margin-right: 4rem
+}
+
+.logout-div h1 {
+  margin:0 1rem;
+}
+
+.logout-div button {
+  margin:0 1rem;
+  padding: 0.7rem 2rem;
+  border: 2px solid rgb(82, 182, 82);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.logout-div button:hover {
+  background-color: #333;
+  color: white;
+}
+
+.home {
+  background-color: #cac9c9;
+  min-height: 34.7rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding-left: 4rem;
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+
+}
+
+.workout-details {
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+  background-color: #f1f1f1;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+  margin: 1rem 0;
+}
+
+.workout-details h4,.create h3 {
+  color: rgb(55, 151, 55);
+}
+
+.workout-details p {
+  margin: 0.4rem 0;
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+.workout-details p strong{
+  color: #333;
+  opacity: 1;
+  font-size: 0.8rem;
+}
+
+.workout-details p:nth-child(4) {
+  font-size: 0.6rem;
+  opacity: 0.7;
+}
+
+.workout-details button {
+  padding: 0.3rem 0.5rem;
+  background-color: rgb(255, 32, 32);
+  color: #f1f1f1;
+  border: none;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+.workout-details button:hover {
+  opacity: 0.8;
+}
+
+.create {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+}
+
+.create h3 {
+  text-align: center;
+}
+.create label {
+  margin: 1.2rem 0 0.2rem 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.create input {
+  height: 2rem;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.create button {
+  margin-top: 1rem;
+  height: 2rem;
+  font-weight: bold;
+  background-color: rgb(82, 182, 82);
+  color: #f1f1f1;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+}
+.create button:hover {
+  opacity: 0.8;
+  color: #333;
+}
+
+.error {
+  font-size: 0.8rem;
+  color: rgb(224, 81, 81);
+  border: 1px solid rgb(236, 105, 105);
+  border-radius: 0.3rem;
+  background-color: rgb(255, 192, 192);
+  margin: 0.5rem 0 0 0;
+  padding: 1rem;
+}
+
+input.error-msg {
+  border: 1px solid red;
+}
